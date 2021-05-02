@@ -1,0 +1,28 @@
+--Example not actual code
+
+
+{
+  "Version": "2021-02-05", 
+  "Statement": [
+  {
+     "Effect": "Allow",
+     "Action": "ec2:Describe*",
+     "Resource": "*"
+  },
+  {
+     "Effect": "Allow",
+     "Action": "elasticloadbalancing:Describe*",
+     "Resource": "*"
+  },
+  {
+     "Effect": "Allow",
+     "Action":[
+     "cloudwatch: ListMetrics",
+     "cloudwatch: GetMetricStatistics",
+     "cloudwatch: Describe*"
+  
+     ],
+     "Resource": "*"
+    }
+   ]
+ }
