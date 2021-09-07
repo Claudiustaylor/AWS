@@ -1,9 +1,11 @@
-Description: >
-    Claudius Taylor / Udacity
-    This template deploys a VPC.
+WSTemplateFormatVersion: 2010-09-09
+Description: Claudius / Udacity - This template deploys a VPC
 Resources:
-    VPC:
-        Type: AWS::EC2::VPC
-        Properties:
-            CidrBlock: 10.0.0.0/16
-            EnableDnsHostnames: true
+UdacityVPC:
+  Type: 'AWS::EC2::VPC'
+  Properties:
+    CidrBlock: 10.0.0.0/16
+    EnableDnsHostnames: 'true'
+    Tags:
+    - Key: name
+      Value: myfirsttestvpc
