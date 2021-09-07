@@ -1,0 +1,7 @@
+aws cloudformation create-stack --stack name myfirstest --region us-west-2 --template-body file://testcfn.yml
+
+
+Alternative 
+were $1, $2, and $3 can be replaced with the actual values passed as command-line arguments
+
+aws cloudformation create-stack --stack-name $1 --template-body file://$2  --parameters file://$3 --capabilities "CAPABILITY_IAM" "CAPABILITY_NAMED_IAM" --region=us-west-2
